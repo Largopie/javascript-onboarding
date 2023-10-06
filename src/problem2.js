@@ -14,7 +14,7 @@ const findDuplication = (string) => {
 
 const deleteDuplication = (deleteChar, string) => {
   for(char of deleteChar) {
-    string = string.replace(`${char}${char}`, '');
+    string = string.replaceAll(`${char}${char}`, '');
   }
 
   return string;
